@@ -5,6 +5,6 @@ public enum JsonType {
   STR,
   BOOL,
   LIST,
-  ARRAY,
+  MAP,
   NULL;
 }

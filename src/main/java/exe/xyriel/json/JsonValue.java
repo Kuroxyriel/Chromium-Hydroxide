@@ -20,6 +20,10 @@ public class JsonValue {
     type = JsonType.LIST;
     obj = list;
   }
+  public JsonValue(JsonMap map) {
+    type = JsonType.MAP;
+    obj = map;
+  }
   public JsonValue(float num) {
     type = JsonType.NUM;
     obj = num;
@@ -32,6 +36,7 @@ public class JsonValue {
   public boolean getBool() { return (boolean)obj; }
   public String getString() { return (String)obj; }
   public JsonList getList() { return (JsonList)obj; }
+  public JsonMap getMap() { return (JsonMap)obj; }
   public int getInt() { return (int)obj; }
   public float getFloat() { return (float)obj; }
 
